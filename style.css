@@ -2,8 +2,9 @@
 
 body {
     display: flex;
-    background-image: url(images/pattern-background-desktop.svg) ;
-    height: 150vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -12,9 +13,8 @@ body {
 }
 
 .container {
-    width: 375px;
-    height: 550px;
-    background-color: hsl(225, 100%, 98%);
+    max-width: 375px;
+    background-color: white;
     border-radius: 10px;
     position: relative;
 }
@@ -103,6 +103,7 @@ body {
     width: 280px;
     height: 35px;
     margin-left: 40px;
+    margin-bottom: 3em;
     border-radius: 5px;
     background-color: azure;
     border: 0;
@@ -124,13 +125,10 @@ body {
 
     body {
         background-color: rgba(107, 114, 249, 0.549);
-        background-image: none;
+        background-image: url(images/pattern-background-mobile.svg);
     }
 
     .cotainer {
-        width: 375px;
-        position: relative;
-        min-height: 100%;
-        margin-left: 0;
+        max-width: 375px;
     }
 }
